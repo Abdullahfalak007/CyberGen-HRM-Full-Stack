@@ -1,0 +1,104 @@
+[
+  {
+    "id": 1,
+    "name": "Jane Doe",
+    "similarityScore": 89,
+    "appliedDate": "2024-06-02"
+  },
+  {
+    "id": 2,
+    "name": "Michael Smith",
+    "similarityScore": 95,
+    "appliedDate": "2024-06-03"
+  },
+  {
+    "id": 3,
+    "name": "Emily Johnson",
+    "similarityScore": 71,
+    "appliedDate": "2024-06-04"
+  },
+  {
+    "id": 4,
+    "name": "Chris Evans",
+    "similarityScore": 92,
+    "appliedDate": "2024-06-05"
+  },
+  {
+    "id": 5,
+    "name": "Patricia Brown",
+    "similarityScore": 53,
+    "appliedDate": "2024-06-06"
+  },
+  {
+    "id": 6,
+    "name": "John Williams",
+    "similarityScore": 88,
+    "appliedDate": "2024-06-07"
+  },
+  {
+    "id": 7,
+    "name": "Linda Davis",
+    "similarityScore": 90,
+    "appliedDate": "2024-06-08"
+  },
+  {
+    "id": 8,
+    "name": "David Wilson",
+    "similarityScore": 93,
+    "appliedDate": "2024-06-09"
+  },
+  {
+    "id": 9,
+    "name": "Susan Martinez",
+    "similarityScore": 86,
+    "appliedDate": "2024-06-10"
+  },
+  {
+    "id": 10,
+    "name": "James Taylor",
+    "similarityScore": 91,
+    "appliedDate": "2024-06-11"
+  },
+  {
+    "id": 11,
+    "name": "Robert Moore",
+    "similarityScore": 68,
+    "appliedDate": "2024-06-12"
+  },
+  {
+    "id": 12,
+    "name": "Mary Jackson",
+    "similarityScore": 94,
+    "appliedDate": "2024-06-13"
+  },
+  {
+    "id": 13,
+    "name": "William Harris",
+    "similarityScore": 89,
+    "appliedDate": "2024-06-14"
+  },
+  {
+    "id": 14,
+    "name": "Barbara Clark",
+    "similarityScore": 87,
+    "appliedDate": "2024-06-15"
+  },
+  {
+    "id": 15,
+    "name": "Thomas Lewis",
+    "similarityScore": 34,
+    "appliedDate": "2024-06-16"
+  },
+  {
+    "id": 16,
+    "name": "Elizabeth Young",
+    "similarityScore": 90,
+    "appliedDate": "2024-06-17"
+  },
+  {
+    "id": 17,
+    "name": "Charles King",
+    "similarityScore": 39,
+    "appliedDate": "2024-06-18"
+  }
+]

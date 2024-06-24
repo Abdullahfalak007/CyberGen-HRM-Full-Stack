@@ -1,0 +1,18 @@
+[
+  { "imgSrc": "../public/Dashboard_icon_white.svg", "text": "Dashboard" },
+  { "imgSrc": "../public/myprofle_icon_white.svg", "text": "My Profile" },
+  { "imgSrc": "../public/Users_white.svg", "text": "Users" },
+  { "imgSrc": "../public/jobs_icon_white.svg", "text": "Jobs" },
+  { "imgSrc": "../public/marketing_white.svg", "text": "Marketing" },
+  {
+    "imgSrc": "../public/partner_management_white.svg",
+    "text": "Partner Management"
+  },
+  { "imgSrc": "../public/articles_white.svg", "text": "Articles" },
+  { "imgSrc": "../public/rss_feed_icon_white.svg", "text": "RSS Feed" },
+  { "imgSrc": "../public/settings_white.svg", "text": "Settings" },
+  { "imgSrc": "../public/route_white.svg", "text": "Route" },
+  { "imgSrc": "../public/contactUs_icon_white.svg", "text": "Contact Us" },
+  { "imgSrc": "../public/subscribers_white.svg", "text": "Subscribers" },
+  { "imgSrc": "../public/logout_icon_white.svg", "text": "Logout" }
+]
