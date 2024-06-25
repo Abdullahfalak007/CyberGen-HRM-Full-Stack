@@ -1,5 +1,8 @@
 import React from "react";
-import checkmark from "../public/checkmark.png"; // Adjust the extension if it's a png
+import checkmark from "../../../images/checkmark.png";
+import download_cv_icon from "../../../images/download_cv_icon.svg";
+import view_resume_icon from "../../../images/view_resume_icon.svg";
+import ask_ai_icon from "../../../images/ask_ai_icon.svg";
 
 const getColorForScore = (score) => {
   if (score > 70) return "bg-green-500";
@@ -14,11 +17,7 @@ const ResumeDetailsGridBox = ({ resume }) => {
     <div className="border p-4 m-2 rounded-md shadow-md w-full max-w-xs bg-[#e8f4ff]">
       <div className="flex justify-between items-center mb-2">
         <div className="flex items-center bg-customblue p-1 rounded-xl px-2">
-          <img
-            src={"../public/ask_ai_icon.svg"}
-            alt="Ask AI Icon"
-            className="w-5 h-5"
-          />
+          <img src={ask_ai_icon} alt="Ask AI Icon" className="w-5 h-5" />
           <span className="text-white ml-2 text-[0.533rem] text-md">
             Ask AI
           </span>
@@ -59,33 +58,21 @@ const ResumeDetailsGridBox = ({ resume }) => {
           className="bg-customblue text-white py-1 px-2 rounded-lg whitespace-nowrap flex items-center"
         >
           Original Resume
-          <img
-            src={"../public/download_cv_icon.svg"}
-            alt="CV Icon"
-            className="w-3 h-3 ml-1"
-          />
+          <img src={download_cv_icon} alt="CV Icon" className="w-3 h-3 ml-1" />
         </button>
         <button
           style={{ fontSize: "0.445rem" }}
           className="bg-customblue text-white py-1 px-2 rounded-lg whitespace-nowrap flex items-center"
         >
           Resume Branded
-          <img
-            src={"../public/download_cv_icon.svg"}
-            alt="CV Icon"
-            className="w-3 h-3 ml-1"
-          />
+          <img src={download_cv_icon} alt="CV Icon" className="w-3 h-3 ml-1" />
         </button>
         <button
           style={{ fontSize: "0.445rem" }}
           className="bg-customblue text-white py-1 px-2 rounded-lg whitespace-nowrap flex items-center"
         >
           Resume Summary
-          <img
-            src={"../public/view_resume_icon.svg"}
-            alt="CV Icon"
-            className="w-3 h-3 ml-1"
-          />
+          <img src={view_resume_icon} alt="CV Icon" className="w-3 h-3 ml-1" />
         </button>
       </div>
       <div className="flex justify-around space-x-1 mt-5">

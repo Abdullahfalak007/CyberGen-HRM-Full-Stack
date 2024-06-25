@@ -1,4 +1,7 @@
+import React from "react";
 import "tailwindcss/tailwind.css";
+import notification_bell from "../../../images/notification_bell.svg";
+import man_1 from "../../../images/man 1.svg";
 
 const Navbar = () => {
   return (
@@ -37,20 +40,12 @@ const Navbar = () => {
           <ul className="flex flex-col p-4 md:p-0 mt-4 md:flex-row md:space-x-4 rtl:space-x-reverse md:mt-0">
             <li>
               <a href="#">
-                <img
-                  src="../public/notification_bell.svg"
-                  alt="Icon 1"
-                  className="w-6 h-6"
-                />
+                <img src={notification_bell} alt="Icon 1" className="w-6 h-6" />
               </a>
             </li>
             <li>
               <a href="#">
-                <img
-                  src="../public/man 1.svg"
-                  alt="Icon 2"
-                  className="w-6 h-6"
-                />
+                <img src={man_1} alt="Icon 2" className="w-6 h-6" />
               </a>
             </li>
           </ul>

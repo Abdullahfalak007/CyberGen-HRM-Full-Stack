@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import arrow from "../../../images/arrow.svg";
 
 const ProgressMilestone = ({
   jobSelected,
@@ -68,7 +69,7 @@ const ProgressMilestone = ({
           {index < steps.length - 1 && (
             <div className="flex items-center">
               <img
-                src="../public/arrow.svg"
+                src={arrow}
                 alt="Arrow"
                 className={index === 0 ? "w-20 mb-20 mr-2" : "w-20 mb-20 ml-2"}
               />

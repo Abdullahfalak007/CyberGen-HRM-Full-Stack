@@ -5,7 +5,7 @@ import Form from "./components/Form";
 import AnalyzingLoader from "./components/AnalyzingLoader";
 import RankedResumes from "./components/RankedResumes";
 import ProgressMilestone from "./components/ProgressMilestone";
-import "tailwindcss/tailwind.css";
+import "./tailwind.css";
 
 function App() {
   const [jobSelected, setJobSelected] = useState(false);

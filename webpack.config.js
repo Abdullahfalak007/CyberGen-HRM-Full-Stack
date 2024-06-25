@@ -1,107 +1,42 @@
-// const path = require("path");
-
-// module.exports = {
-//   mode: "production",
-//   entry: "./hrm_app/static/js/src/HrmJobs.jsx",
-//   output: {
-//     path: path.resolve(__dirname, "hrm_app/static/js/dist"),
-//     filename: "HrmJobs.js",
-//   },
-//   module: {
-//     rules: [
-//       {
-//         test: /\.jsx?$/,
-//         exclude: /node_modules/,
-//         use: {
-//           loader: "babel-loader",
-//           options: {
-//             presets: ["@babel/preset-react"],
-//           },
-//         },
-//       },
-//       {
-//         test: /\.css$/i,
-//         use: ["style-loader", "css-loader", "postcss-loader"],
-//       },
-//       {
-//         test: /\.(png|jpe?g|gif)$/i,
-//         use: [
-//           {
-//             loader: "file-loader",
-//           },
-//         ],
-//       },
-//       {
-//         test: /\.(png|jpe?g|gif|svg)$/i,
-//         use: [
-//           {
-//             loader: "file-loader",
-//             options: {
-//               name: "[path][name].[ext]",
-//             },
-//           },
-//         ],
-//       },
-//     ],
-//   },
-//   resolve: {
-//     extensions: [".js", ".jsx", ".json"],
-//   },
-//   output: {
-//     path: path.resolve(__dirname, "dist"),
-//     filename: "bundle.js",
-//   },
-// };
-
 const path = require("path");
 
 module.exports = {
-  mode: "production",
-  entry: "./hrm_app/static/js/src/HrmJobs.jsx",
+  mode: "development",
+  target: "web",
+  entry: {
+    HrmJobs: "./hrm_app/static/js/src/HrmJobs.jsx",
+  },
   output: {
     path: path.resolve(__dirname, "hrm_app/static/js/dist"),
-    filename: "HrmJobs.js",
+    filename: "[name].js",
+    libraryTarget: "var", // This ensures the output is compatible with the browser
+    library: "[name]",
+    publicPath: "/static/js/dist/",
+  },
+
+  resolve: {
+    extensions: [".tsx", ".ts", ".js", ".jsx"],
   },
   module: {
     rules: [
       {
         test: /\.jsx?$/,
-        exclude: /node_modules/,
         use: {
           loader: "babel-loader",
-          options: {
-            presets: ["@babel/preset-react"],
-          },
         },
+        exclude: /node_modules/,
       },
       {
         test: /\.css$/i,
-        use: ["style-loader", "css-loader", "postcss-loader"],
+        use: ["style-loader", "css-loader", "postcss-loader"], // Ensure postcss-loader is included
       },
       {
-        test: /\.(png|jpe?g|gif)$/i,
-        use: [
-          {
-            loader: "file-loader",
-          },
-        ],
-      },
-      {
-        test: /\.(png|jpe?g|gif|svg)$/i,
-        use: [
-          {
-            loader: "file-loader",
-            options: {
-              name: "public/[name].[ext]",
-              outputPath: "static/", // Ensure this matches your Django static structure
-              publicPath: "/static/",
-            },
-          },
-        ],
+        test: /\.(png|svg|jpg|jpeg|gif|webp)$/i,
+        type: "asset/resource",
+        generator: {
+          filename: "images/[hash][ext][query]",
+        },
       },
     ],
-  },
-  resolve: {
-    extensions: [".js", ".jsx", ".json"],
   },
 };

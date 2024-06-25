@@ -13,6 +13,8 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 from pathlib import Path
 import os
 
+
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -38,7 +40,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    "hrm_app.apps.HrmAppConfig"
+    "hrm_app.apps.HrmAppConfig",
+    'tailwind',
+    'theme'
 ]
 
 MIDDLEWARE = [
@@ -118,19 +122,27 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+# STATIC_URL = '/static/'
+# STATICFILES_DIRS = [BASE_DIR / "static"]
 
-# Static files (CSS, JavaScript, Images)
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static'),
-    os.path.join(BASE_DIR, 'hrm_app/static'),
-    os.path.join(BASE_DIR, 'public'),  # Add this line
-]
-# This is the directory where `collectstatic` will gather all static files
+
+# Define the STATIC_ROOT
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+# Ensure you have STATICFILES_DIRS set correctly to include the React build output
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static'),  # Ensure you have a static directory for Django static files
+    os.path.join(BASE_DIR, 'hrm_app/static'),  # Path to your React build output
+]
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+TAILWIND_APP_NAME = 'theme'
+
+INTERNAL_IPS = [
+    "127.0.0.1",
+]

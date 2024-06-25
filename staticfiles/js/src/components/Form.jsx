@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import upload from "../../../images/Upload.svg";
 
 const Form = ({ onJobSelect, onFileUpload, onNextClick }) => {
   const [uploadedFileName, setUploadedFileName] = useState(null);
@@ -145,7 +146,7 @@ const Form = ({ onJobSelect, onFileUpload, onNextClick }) => {
                 ) : (
                   <div className="flex items-center">
                     <img
-                      src="../public/Upload.svg"
+                      src={upload}
                       alt="Upload Icon"
                       className="w-14 h-14 mr-2"
                     />

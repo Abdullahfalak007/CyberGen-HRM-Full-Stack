@@ -1,6 +1,6 @@
 // tailwind.config.js
 module.exports = {
-  content: ["./src/**/*.{js,jsx,ts,tsx}"],
+  content: ["./hrm_app/static/js/src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
       colors: {
