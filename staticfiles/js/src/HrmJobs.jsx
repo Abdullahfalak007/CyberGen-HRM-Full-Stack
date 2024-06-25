@@ -1,26 +1,3 @@
-// import React from 'react';
-// import { createRoot } from 'react-dom/client';
-// import logo from '../../images/logo-2150297_640.webp';
-// import '../../css/test.css';
-
-// const HrmJobs = () => {
-//   return (<div>
-//     <h1>Working</h1>
-//     Welcome to the HRM Jobs page with React and JypeScript!....
-//     <img src={logo} alt="Logo" />
-//   </div>);
-// };
-
-// document.addEventListener('DOMContentLoaded', () => {
-//   const container = document.getElementById('root');
-//   if (container) {
-//     const root = createRoot(container);
-//     root.render(<HrmJobs />);
-//   } else {
-//     console.error('React target container not found');
-//   }
-// });
-
 import React, { useState } from "react";
 import { createRoot } from "react-dom/client";
 import Sidebar from "./components/Sidebar";
@@ -29,7 +6,6 @@ import Form from "./components/Form";
 import AnalyzingLoader from "./components/AnalyzingLoader";
 import RankedResumes from "./components/RankedResumes";
 import ProgressMilestone from "./components/ProgressMilestone";
-import logo from "../../images/logo-2150297_640.webp";
 import "../../css/test.css";
 import "./tailwind.css";
 
@@ -57,9 +33,10 @@ const HrmJobs = () => {
 
   return (
     <div className="flex h-full bg-white">
-      <Sidebar />
-      <div className="flex flex-1 flex-col bg-selectedbg">
+      <Sidebar className="w-[19.375rem]" />
+      <div className="flex flex-1 flex-col bg-selectedbg w-[70.625rem]">
         <Navbar />
+
         <div className="p-4"></div>
         <ProgressMilestone
           jobSelected={jobSelected}

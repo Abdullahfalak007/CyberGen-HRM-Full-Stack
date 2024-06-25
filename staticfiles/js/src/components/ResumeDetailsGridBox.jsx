@@ -24,7 +24,7 @@ const ResumeDetailsGridBox = ({ resume }) => {
         </div>
         <input
           type="checkbox"
-          className="appearance-none h-5 w-5 border border-gray-300 rounded-full focus:outline-none checked:bg-blue-600 checked:border-transparent"
+          className="appearance-none h-5 w-5 border-2 border-customblue rounded-full focus:outline-none checked:bg-blue-600 checked:border-transparent"
           style={{
             backgroundImage: "none",
             backgroundPosition: "center",
